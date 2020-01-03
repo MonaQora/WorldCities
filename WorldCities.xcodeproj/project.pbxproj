@@ -16,6 +16,9 @@
 		4846B59A23BED41000483DE7 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59923BED41000483DE7 /* MasterTableViewController.swift */; };
 		4846B59C23BED43900483DE7 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59B23BED43900483DE7 /* SplitViewController.swift */; };
 		4846B59E23BED48200483DE7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59D23BED48200483DE7 /* DetailsViewController.swift */; };
+		48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */; };
+		48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47F23BEE3BA00C7EB12 /* Constants.swift */; };
+		48F7F48223BEE3EA00C7EB12 /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		4846B59923BED41000483DE7 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		4846B59B23BED43900483DE7 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		4846B59D23BED48200483DE7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		48F7F47F23BEE3BA00C7EB12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				4846B59723BED3BA00483DE7 /* AppDelegate */,
+				48F7F47623BEE27300C7EB12 /* Helper */,
 				4846B59823BED3E900483DE7 /* Views */,
+				48F7F47E23BEE36400C7EB12 /* Constants */,
 				4846B57B23BED07500483DE7 /* Main.storyboard */,
 				4846B57E23BED07600483DE7 /* Assets.xcassets */,
 				4846B58023BED07600483DE7 /* LaunchScreen.storyboard */,
@@ -119,6 +127,47 @@
 				4846B59D23BED48200483DE7 /* DetailsViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		48F7F47623BEE27300C7EB12 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F47723BEE28700C7EB12 /* JsonMapper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		48F7F47723BEE28700C7EB12 /* JsonMapper */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F47923BEE2DA00C7EB12 /* Response */,
+				48F7F47823BEE2D200C7EB12 /* Parser */,
+			);
+			path = JsonMapper;
+			sourceTree = "<group>";
+		};
+		48F7F47823BEE2D200C7EB12 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		48F7F47923BEE2DA00C7EB12 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		48F7F47E23BEE36400C7EB12 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F47F23BEE3BA00C7EB12 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +273,11 @@
 			files = (
 				4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */,
 				4846B59A23BED41000483DE7 /* MasterTableViewController.swift in Sources */,
+				48F7F48223BEE3EA00C7EB12 /* JsonMapper.swift in Sources */,
 				4846B59C23BED43900483DE7 /* SplitViewController.swift in Sources */,
 				4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */,
+				48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */,
+				48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */,
 				4846B59E23BED48200483DE7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
