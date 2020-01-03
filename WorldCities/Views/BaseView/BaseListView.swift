@@ -16,6 +16,10 @@ protocol BaseViewProtocol {
 }
 
 extension BaseViewProtocol {
+    func setActivityIndicator(hidden: Bool) {
+        
+    }
+    
     func setActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint) {
         if hidden {
             loadingIndicator.removeFromSuperview()

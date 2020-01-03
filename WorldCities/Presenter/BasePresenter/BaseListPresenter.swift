@@ -27,9 +27,9 @@ extension BaseListViewPresnter: BaseListPresenterProtocol {
 
 class BasePresenter {
     var view : BaseViewProtocol?
-    var model: BaseListModel?
+    var model: BaseListModelProtocol?
 
-    public init(view: BaseViewProtocol?, model: BaseListModel?) {
+    public init(view: BaseViewProtocol?, model: BaseListModelProtocol?) {
         self.view = view
         self.model = model
     }
