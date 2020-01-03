@@ -19,6 +19,9 @@
 		48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */; };
 		48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47F23BEE3BA00C7EB12 /* Constants.swift */; };
 		48F7F48223BEE3EA00C7EB12 /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */; };
+		48F7F48A23BEFBBC00C7EB12 /* BaseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */; };
+		48F7F48C23BEFBFA00C7EB12 /* BaseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48B23BEFBFA00C7EB12 /* BaseListPresenter.swift */; };
+		48F7F48F23BEFDE900C7EB12 /* BaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48E23BEFDE900C7EB12 /* BaseListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		48F7F47F23BEE3BA00C7EB12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapper.swift; sourceTree = "<group>"; };
+		48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListView.swift; sourceTree = "<group>"; };
+		48F7F48B23BEFBFA00C7EB12 /* BaseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListPresenter.swift; sourceTree = "<group>"; };
+		48F7F48E23BEFDE900C7EB12 /* BaseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 				4846B59723BED3BA00483DE7 /* AppDelegate */,
 				48F7F47623BEE27300C7EB12 /* Helper */,
 				4846B59823BED3E900483DE7 /* Views */,
+				48F7F48623BEFB1000C7EB12 /* Presenter */,
+				48F7F48D23BEFDCB00C7EB12 /* Models */,
 				48F7F47E23BEE36400C7EB12 /* Constants */,
 				4846B57B23BED07500483DE7 /* Main.storyboard */,
 				4846B57E23BED07600483DE7 /* Assets.xcassets */,
@@ -122,6 +130,7 @@
 		4846B59823BED3E900483DE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				48F7F48823BEFB9900C7EB12 /* BaseView */,
 				4846B59923BED41000483DE7 /* MasterTableViewController.swift */,
 				4846B59B23BED43900483DE7 /* SplitViewController.swift */,
 				4846B59D23BED48200483DE7 /* DetailsViewController.swift */,
@@ -168,6 +177,47 @@
 				48F7F47F23BEE3BA00C7EB12 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		48F7F48623BEFB1000C7EB12 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F48723BEFB2600C7EB12 /* BasePresenter */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48F7F48723BEFB2600C7EB12 /* BasePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F48B23BEFBFA00C7EB12 /* BaseListPresenter.swift */,
+			);
+			path = BasePresenter;
+			sourceTree = "<group>";
+		};
+		48F7F48823BEFB9900C7EB12 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		48F7F48D23BEFDCB00C7EB12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F49023BF01BA00C7EB12 /* BaseModel */,
+			);
+			name = Models;
+			path = Presenter/Models;
+			sourceTree = "<group>";
+		};
+		48F7F49023BF01BA00C7EB12 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				48F7F48E23BEFDE900C7EB12 /* BaseListModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */,
+				48F7F48C23BEFBFA00C7EB12 /* BaseListPresenter.swift in Sources */,
+				48F7F48F23BEFDE900C7EB12 /* BaseListModel.swift in Sources */,
 				4846B59A23BED41000483DE7 /* MasterTableViewController.swift in Sources */,
 				48F7F48223BEE3EA00C7EB12 /* JsonMapper.swift in Sources */,
 				4846B59C23BED43900483DE7 /* SplitViewController.swift in Sources */,
 				4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */,
 				48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */,
+				48F7F48A23BEFBBC00C7EB12 /* BaseListView.swift in Sources */,
 				48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */,
 				4846B59E23BED48200483DE7 /* DetailsViewController.swift in Sources */,
 			);
