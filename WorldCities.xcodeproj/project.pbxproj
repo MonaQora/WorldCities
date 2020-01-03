@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57523BED07500483DE7 /* AppDelegate.swift */; };
+		4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57723BED07500483DE7 /* SceneDelegate.swift */; };
+		4846B57A23BED07500483DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57923BED07500483DE7 /* ViewController.swift */; };
+		4846B57D23BED07500483DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846B57B23BED07500483DE7 /* Main.storyboard */; };
+		4846B57F23BED07600483DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846B57E23BED07600483DE7 /* Assets.xcassets */; };
+		4846B58223BED07600483DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846B58023BED07600483DE7 /* LaunchScreen.storyboard */; };
+		4846B58D23BED07700483DE7 /* WorldCitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B58C23BED07700483DE7 /* WorldCitiesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4846B58923BED07700483DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4846B56A23BED07500483DE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4846B57123BED07500483DE7;
+			remoteInfo = WorldCities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4846B57223BED07500483DE7 /* WorldCities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4846B57523BED07500483DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4846B57723BED07500483DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4846B57923BED07500483DE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4846B57C23BED07500483DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4846B57E23BED07600483DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4846B58123BED07600483DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4846B58323BED07600483DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4846B58823BED07700483DE7 /* WorldCitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4846B58C23BED07700483DE7 /* WorldCitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCitiesTests.swift; sourceTree = "<group>"; };
+		4846B58E23BED07700483DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4846B56F23BED07500483DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4846B58523BED07700483DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4846B56923BED07500483DE7 = {
+			isa = PBXGroup;
+			children = (
+				4846B57423BED07500483DE7 /* WorldCities */,
+				4846B58B23BED07700483DE7 /* WorldCitiesTests */,
+				4846B57323BED07500483DE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4846B57323BED07500483DE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4846B57223BED07500483DE7 /* WorldCities.app */,
+				4846B58823BED07700483DE7 /* WorldCitiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4846B57423BED07500483DE7 /* WorldCities */ = {
+			isa = PBXGroup;
+			children = (
+				4846B57523BED07500483DE7 /* AppDelegate.swift */,
+				4846B57723BED07500483DE7 /* SceneDelegate.swift */,
+				4846B57923BED07500483DE7 /* ViewController.swift */,
+				4846B57B23BED07500483DE7 /* Main.storyboard */,
+				4846B57E23BED07600483DE7 /* Assets.xcassets */,
+				4846B58023BED07600483DE7 /* LaunchScreen.storyboard */,
+				4846B58323BED07600483DE7 /* Info.plist */,
+			);
+			path = WorldCities;
+			sourceTree = "<group>";
+		};
+		4846B58B23BED07700483DE7 /* WorldCitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				4846B58C23BED07700483DE7 /* WorldCitiesTests.swift */,
+				4846B58E23BED07700483DE7 /* Info.plist */,
+			);
+			path = WorldCitiesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4846B57123BED07500483DE7 /* WorldCities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4846B59123BED07700483DE7 /* Build configuration list for PBXNativeTarget "WorldCities" */;
+			buildPhases = (
+				4846B56E23BED07500483DE7 /* Sources */,
+				4846B56F23BED07500483DE7 /* Frameworks */,
+				4846B57023BED07500483DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldCities;
+			productName = WorldCities;
+			productReference = 4846B57223BED07500483DE7 /* WorldCities.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4846B58723BED07700483DE7 /* WorldCitiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4846B59423BED07700483DE7 /* Build configuration list for PBXNativeTarget "WorldCitiesTests" */;
+			buildPhases = (
+				4846B58423BED07700483DE7 /* Sources */,
+				4846B58523BED07700483DE7 /* Frameworks */,
+				4846B58623BED07700483DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4846B58A23BED07700483DE7 /* PBXTargetDependency */,
+			);
+			name = WorldCitiesTests;
+			productName = WorldCitiesTests;
+			productReference = 4846B58823BED07700483DE7 /* WorldCitiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4846B56A23BED07500483DE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Mona Qora";
+				TargetAttributes = {
+					4846B57123BED07500483DE7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					4846B58723BED07700483DE7 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 4846B57123BED07500483DE7;
+					};
+				};
+			};
+			buildConfigurationList = 4846B56D23BED07500483DE7 /* Build configuration list for PBXProject "WorldCities" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4846B56923BED07500483DE7;
+			productRefGroup = 4846B57323BED07500483DE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4846B57123BED07500483DE7 /* WorldCities */,
+				4846B58723BED07700483DE7 /* WorldCitiesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4846B57023BED07500483DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4846B58223BED07600483DE7 /* LaunchScreen.storyboard in Resources */,
+				4846B57F23BED07600483DE7 /* Assets.xcassets in Resources */,
+				4846B57D23BED07500483DE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4846B58623BED07700483DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4846B56E23BED07500483DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4846B57A23BED07500483DE7 /* ViewController.swift in Sources */,
+				4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */,
+				4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4846B58423BED07700483DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4846B58D23BED07700483DE7 /* WorldCitiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4846B58A23BED07700483DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4846B57123BED07500483DE7 /* WorldCities */;
+			targetProxy = 4846B58923BED07700483DE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4846B57B23BED07500483DE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4846B57C23BED07500483DE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4846B58023BED07600483DE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4846B58123BED07600483DE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4846B58F23BED07700483DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4846B59023BED07700483DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4846B59223BED07700483DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MonaQora.WorldCities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4846B59323BED07700483DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MonaQora.WorldCities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4846B59523BED07700483DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCitiesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MonaQora.WorldCitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCities.app/WorldCities";
+			};
+			name = Debug;
+		};
+		4846B59623BED07700483DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCitiesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MonaQora.WorldCitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCities.app/WorldCities";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4846B56D23BED07500483DE7 /* Build configuration list for PBXProject "WorldCities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4846B58F23BED07700483DE7 /* Debug */,
+				4846B59023BED07700483DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4846B59123BED07700483DE7 /* Build configuration list for PBXNativeTarget "WorldCities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4846B59223BED07700483DE7 /* Debug */,
+				4846B59323BED07700483DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4846B59423BED07700483DE7 /* Build configuration list for PBXNativeTarget "WorldCitiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4846B59523BED07700483DE7 /* Debug */,
+				4846B59623BED07700483DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4846B56A23BED07500483DE7 /* Project object */;
+}
