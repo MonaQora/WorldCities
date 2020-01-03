@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57523BED07500483DE7 /* AppDelegate.swift */; };
 		4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57723BED07500483DE7 /* SceneDelegate.swift */; };
-		4846B57A23BED07500483DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B57923BED07500483DE7 /* ViewController.swift */; };
 		4846B57D23BED07500483DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846B57B23BED07500483DE7 /* Main.storyboard */; };
 		4846B57F23BED07600483DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846B57E23BED07600483DE7 /* Assets.xcassets */; };
 		4846B58223BED07600483DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846B58023BED07600483DE7 /* LaunchScreen.storyboard */; };
 		4846B58D23BED07700483DE7 /* WorldCitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B58C23BED07700483DE7 /* WorldCitiesTests.swift */; };
+		4846B59A23BED41000483DE7 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59923BED41000483DE7 /* MasterTableViewController.swift */; };
+		4846B59C23BED43900483DE7 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59B23BED43900483DE7 /* SplitViewController.swift */; };
+		4846B59E23BED48200483DE7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846B59D23BED48200483DE7 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		4846B57223BED07500483DE7 /* WorldCities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4846B57523BED07500483DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4846B57723BED07500483DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4846B57923BED07500483DE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4846B57C23BED07500483DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4846B57E23BED07600483DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4846B58123BED07600483DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		4846B58823BED07700483DE7 /* WorldCitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4846B58C23BED07700483DE7 /* WorldCitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCitiesTests.swift; sourceTree = "<group>"; };
 		4846B58E23BED07700483DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4846B59923BED41000483DE7 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		4846B59B23BED43900483DE7 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		4846B59D23BED48200483DE7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,8 @@
 		4846B57423BED07500483DE7 /* WorldCities */ = {
 			isa = PBXGroup;
 			children = (
-				4846B57523BED07500483DE7 /* AppDelegate.swift */,
-				4846B57723BED07500483DE7 /* SceneDelegate.swift */,
-				4846B57923BED07500483DE7 /* ViewController.swift */,
+				4846B59723BED3BA00483DE7 /* AppDelegate */,
+				4846B59823BED3E900483DE7 /* Views */,
 				4846B57B23BED07500483DE7 /* Main.storyboard */,
 				4846B57E23BED07600483DE7 /* Assets.xcassets */,
 				4846B58023BED07600483DE7 /* LaunchScreen.storyboard */,
@@ -97,6 +100,25 @@
 				4846B58E23BED07700483DE7 /* Info.plist */,
 			);
 			path = WorldCitiesTests;
+			sourceTree = "<group>";
+		};
+		4846B59723BED3BA00483DE7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4846B57523BED07500483DE7 /* AppDelegate.swift */,
+				4846B57723BED07500483DE7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4846B59823BED3E900483DE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4846B59923BED41000483DE7 /* MasterTableViewController.swift */,
+				4846B59B23BED43900483DE7 /* SplitViewController.swift */,
+				4846B59D23BED48200483DE7 /* DetailsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4846B57A23BED07500483DE7 /* ViewController.swift in Sources */,
 				4846B57623BED07500483DE7 /* AppDelegate.swift in Sources */,
+				4846B59A23BED41000483DE7 /* MasterTableViewController.swift in Sources */,
+				4846B59C23BED43900483DE7 /* SplitViewController.swift in Sources */,
 				4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */,
+				4846B59E23BED48200483DE7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
