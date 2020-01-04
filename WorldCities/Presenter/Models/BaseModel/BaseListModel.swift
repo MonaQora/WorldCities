@@ -9,7 +9,7 @@
 import UIKit
 
 protocol BaseListModelProtocol {
-    func fetchListInfo(completion: @escaping ([AnyObject]?, ModelError?) -> Void)
+    func fetchListInfo(completion: @escaping (AnyObject?, ModelError?) -> Void)
     func numberOfRowsAt(section: Int) -> Int
     func modelAt<T>(index: Int) -> T?
     func searchForCitiesContains(_ searchValue: String, completion: @escaping ([City]?) -> Void)
