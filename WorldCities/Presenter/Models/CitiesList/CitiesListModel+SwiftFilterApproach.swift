@@ -37,7 +37,7 @@ class CitiesListModelFilter:BaseListModel {
 
 extension CitiesListModelFilter: BaseListModelProtocol {
     
-    func fetchListInfo(completion: @escaping ([AnyObject]?, ModelError?) -> Void) {
+    func fetchListInfo(completion: @escaping (AnyObject?, ModelError?) -> Void) {
         self.loadCitiesListFromFile(fileName: fileName) {[weak self] citiesList, error in
             if let citites = citiesList {
                 let sortedList = citites.sorted {
@@ -46,7 +46,7 @@ extension CitiesListModelFilter: BaseListModelProtocol {
                 self?.citiesList = sortedList
                 self?.searchCitiesList = sortedList
             }
-            completion(citiesList as [AnyObject]?, error)
+            completion(citiesList as AnyObject?, error)
         }
     }
     

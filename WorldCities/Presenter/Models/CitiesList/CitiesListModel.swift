@@ -106,7 +106,7 @@ class CitiesListModel: BaseListModel {
 }
 
 extension CitiesListModel: BaseListModelProtocol {
-    func fetchListInfo(completion: @escaping ([AnyObject]?, ModelError?) -> Void) {
+    func fetchListInfo(completion: @escaping (AnyObject?, ModelError?) -> Void) {
         self.loadCitiesListFromFile(fileName: fileName) {[weak self] citiesList, error in
             if let citites = citiesList {
                 let sortedList = citites.sorted {
@@ -116,7 +116,7 @@ extension CitiesListModel: BaseListModelProtocol {
                 self?.citiesListReversed = sortedList.reversed()
                 self?.resultsOffset = (start: 0, end: citites.count)
             }
-            completion(citiesList as [AnyObject]?, error)
+            completion(citiesList as AnyObject?, error)
         }
     }
     
