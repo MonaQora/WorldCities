@@ -17,6 +17,7 @@ protocol BaseViewProtocol {
     func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String)
 }
 
+//the empty functions for keeping them optional, not all views will need to implemnt it
 extension BaseViewProtocol {
     
     func setupViewData() {
