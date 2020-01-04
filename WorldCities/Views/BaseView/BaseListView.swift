@@ -12,15 +12,26 @@ protocol BaseViewProtocol {
     func setupViewData()
     func setupErrorHandling(error: ModelError)
     func setActivityIndicator(hidden: Bool)
-    func setActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint)
+    
+    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint)
+    func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String)
 }
 
 extension BaseViewProtocol {
+    
+    func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String) {
+            let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: nil))
+        DispatchQueue.main.async {
+            view.present(alertView, animated: true, completion: nil)
+        }
+    }
+    
     func setActivityIndicator(hidden: Bool) {
         
     }
     
-    func setActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint) {
+    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint) {
         if hidden {
             loadingIndicator.removeFromSuperview()
             DispatchQueue.main.async {

@@ -8,7 +8,13 @@
 
 import Foundation
 
+struct ViewTitles {
+    static let cititlsListViewTitle = "Cities"
+}
+
 struct ErrorDescreption {
+    static let defaultErrorMessage = "Somthing went wrong."
+    
     static let wrongJsonPath = "Wrong json path."
     static let failedLoadList = "Failed to load list."
     static let failedParseData = "Failed parse data."
