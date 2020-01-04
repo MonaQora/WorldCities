@@ -19,6 +19,14 @@ protocol BaseViewProtocol {
 
 extension BaseViewProtocol {
     
+    func setupViewData() {
+        
+    }
+    
+    func setupErrorHandling(error: ModelError) {
+        
+    }
+    
     func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String) {
             let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: nil))

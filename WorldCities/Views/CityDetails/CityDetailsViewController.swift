@@ -49,7 +49,7 @@ extension CityDetailsViewController: MKMapViewDelegate {
     }
 }
 
-extension CityDetailsViewController: CityDetailsViewProtocol {
+extension CityDetailsViewController: CityDetailsViewProtocol, BaseViewProtocol {
 
     func setCityMapData(coordinate: CLLocationCoordinate2D) {
         DispatchQueue.main.async {
@@ -64,11 +64,8 @@ extension CityDetailsViewController: CityDetailsViewProtocol {
     }
     
     func setupErrorHandling(error: ModelError) {
-        let alertView = UIAlertController(title: "Error", message: error.errorDescription, preferredStyle: .alert)
-        alertView.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
-        DispatchQueue.main.async {
-            self.present(alertView, animated: true, completion: nil)
-        }
+        setupAlertView(view: self, title: "Error", message: error.errorDescription ?? ViewTitles.cityDetailsViewTitle, buttonTitle: "Close")
     }
 }
+
 
