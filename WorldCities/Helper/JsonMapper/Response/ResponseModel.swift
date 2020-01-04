@@ -17,6 +17,7 @@ enum ModelError: Error {
     case wrongPath
     case failedLoadingList
     case failedParseData
+    case wrongCityLocation
 }
 
 extension ModelError: LocalizedError {
@@ -25,6 +26,7 @@ extension ModelError: LocalizedError {
         case .wrongPath: return ErrorDescreption.wrongJsonPath
         case .failedLoadingList: return ErrorDescreption.failedLoadList
         case .failedParseData: return ErrorDescreption.failedParseData
+        case .wrongCityLocation: return ErrorDescreption.failedLoadCityCoordinate
         }
     }
 }
