@@ -17,10 +17,10 @@ protocol CityDetailsViewPresenterProtocol {
 
 class CityDetailsViewPresenter {
     private var cityDetailsModel: CityDetailsModel! //Model
-    private var cityDetailsView: CitiyDetailsViewProtocol?
+    private var cityDetailsView: CityDetailsViewProtocol?
     private var cityModel:City!
 
-    init(view: CitiyDetailsViewProtocol, model: CityDetailsModel?, city:City) {
+    init(view: CityDetailsViewProtocol, model: CityDetailsModel?, city:City?) {
         cityDetailsView = view
         cityDetailsModel = model
         cityModel = city

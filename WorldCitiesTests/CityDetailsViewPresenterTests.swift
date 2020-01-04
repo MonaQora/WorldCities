@@ -57,7 +57,7 @@ class CitiesDetailsModelMock: CityDetailsModel{
     }
 }
 
-class CitiesDetailsViewMock: CitiyDetailsViewProtocol {
+class CitiesDetailsViewMock: CityDetailsViewProtocol {
     
     private(set) var setCityMapDataHasBeenCalled: Bool = false
     private(set) var setCityViewTitleHasBeenCalled: Bool = false
