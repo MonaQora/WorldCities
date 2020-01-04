@@ -89,7 +89,6 @@ extension CitiesListViewController: BaseViewProtocol {
         setupAlertView(view: self, title: "Error", message: error.errorDescription ?? ErrorDescreption.defaultErrorMessage, buttonTitle: "Close")
     }
     func setActivityIndicator(hidden: Bool) {
-        let centerPoint = CGPoint(x: view.frame.width / 2, y: tableView.contentOffset.y + view.frame.height / 2)
-        setupActivityIndicator(view: view, hidden: hidden, loadingIndicator: loadingIndicator, centerPoint: centerPoint)
+        setupActivityIndicator(view: view, hidden: hidden, loadingIndicator: loadingIndicator)
     }
 }

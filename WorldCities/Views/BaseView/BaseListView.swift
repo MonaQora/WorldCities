@@ -13,7 +13,7 @@ protocol BaseViewProtocol {
     func setupErrorHandling(error: ModelError)
     func setActivityIndicator(hidden: Bool)
     
-    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint)
+    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView)
     func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String)
 }
 
@@ -39,7 +39,7 @@ extension BaseViewProtocol {
         
     }
     
-    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView, centerPoint: CGPoint) {
+    func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView) {
         if hidden {
             loadingIndicator.removeFromSuperview()
             DispatchQueue.main.async {
@@ -47,7 +47,12 @@ extension BaseViewProtocol {
             }
         }
         else {
-            loadingIndicator.center = centerPoint
+
+            let center = CGPoint(x: UIScreen.main.bounds.size.width/2.0, y: UIScreen.main.bounds.size.height/2.0)
+            loadingIndicator.center = center
+            
+            loadingIndicator.autoresizingMask = (UIView.AutoresizingMask(rawValue: UIView.AutoresizingMask.RawValue(UInt8(UIView.AutoresizingMask.flexibleRightMargin.rawValue) | UInt8(UIView.AutoresizingMask.flexibleLeftMargin.rawValue) | UInt8(UIView.AutoresizingMask.flexibleBottomMargin.rawValue) | UInt8(UIView.AutoresizingMask.flexibleTopMargin.rawValue))))
+
             view.addSubview(loadingIndicator)
             DispatchQueue.main.async {
                 loadingIndicator.startAnimating()
