@@ -179,7 +179,7 @@
         <!--About View Controller-->
         <scene sceneID="hXd-wf-288">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zGp-xl-Jcs" customClass="AboutViewController" customModule="BackBaseCitiesBeforeTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zGp-xl-Jcs" customClass="AboutViewController" customModule="WorldCities" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gN2-Nh-UKZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +188,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutCell" rowHeight="106" id="dNm-EL-UbZ" customClass="AboutCell" customModule="BackBaseCitiesBeforeTest" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutCell" rowHeight="106" id="dNm-EL-UbZ" customClass="AboutCell" customModule="WorldCities" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dNm-EL-UbZ" id="qUQ-4g-uI2">
@@ -196,7 +196,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-9K-NgJ">
-                                                    <rect key="frame" x="25" y="21" width="52" height="24"/>
+                                                    <rect key="frame" x="25" y="21" width="364" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -212,6 +212,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="POJ-9K-NgJ" secondAttribute="trailing" constant="5" id="44B-1k-wpF"/>
                                                 <constraint firstItem="POJ-9K-NgJ" firstAttribute="leading" secondItem="qUQ-4g-uI2" secondAttribute="leadingMargin" constant="5" id="Fda-IC-4Ea"/>
                                                 <constraint firstItem="POJ-9K-NgJ" firstAttribute="top" secondItem="qUQ-4g-uI2" secondAttribute="topMargin" constant="10" id="OI2-TL-etO"/>
                                                 <constraint firstItem="nHj-bK-UL5" firstAttribute="leading" secondItem="POJ-9K-NgJ" secondAttribute="leading" id="V3W-D8-7tt"/>
