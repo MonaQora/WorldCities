@@ -24,8 +24,9 @@ class CityDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = ViewTitles.cityDetailsViewTitle
-        self.mapView.delegate = self
         cityDetailsViewPresenter = CityDetailsViewPresenter.init(view: self, model: CityDetailsModel(), city: cityModel)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "More Info", style: .plain, target: self, action: #selector(loadCityInfo))
     }
     
     private func centerMap(_ coordinate: CLLocationCoordinate2D) {
@@ -40,12 +41,10 @@ class CityDetailsViewController: UIViewController {
         annotation.coordinate = coordinate
         mapView.addAnnotation(annotation)
     }
-}
-
-extension CityDetailsViewController: MKMapViewDelegate {
-
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        //when select pin
+    
+    @objc func loadCityInfo(sender: UIButton?) {
+        let deatilsVC = storyboard!.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+        self.navigationController?.pushViewController(deatilsVC, animated: true)
     }
 }
 

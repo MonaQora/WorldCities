@@ -55,11 +55,11 @@ class CitiesListModelMock: BaseListModel, BaseListModelProtocol {
     var returnData: Bool = true
     private var citiesList: [City]?
     
-    func fetchListInfo(completion: @escaping ([AnyObject]?, ModelError?) -> Void) {
+    func fetchListInfo(completion: @escaping (AnyObject?, ModelError?) -> Void) {
         if returnData {
             citiesList = [City.init(country: "Egypt", name: "Alexandria", coord: Location.init(lon: 20.0, lat: 20), identfier: 10),
                           City.init(country: "Egypt", name: "Cairo", coord: Location.init(lon: 21.0, lat: 20), identfier: 11)]
-            completion(citiesList as [AnyObject]?, nil)
+            completion(citiesList as AnyObject?, nil)
         }
         else {
             completion(nil, ModelError.failedLoadingList)
