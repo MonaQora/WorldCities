@@ -27,16 +27,16 @@ extension BaseViewProtocol {
         
     }
     
+    func setActivityIndicator(hidden: Bool) {
+        
+    }
+    
     func setupAlertView(view: UIViewController, title: String, message: String, buttonTitle: String) {
             let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: nil))
         DispatchQueue.main.async {
             view.present(alertView, animated: true, completion: nil)
         }
-    }
-    
-    func setActivityIndicator(hidden: Bool) {
-        
     }
     
     func setupActivityIndicator(view: UIView, hidden: Bool, loadingIndicator: UIActivityIndicatorView) {

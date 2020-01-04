@@ -44,7 +44,7 @@
 		48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */; };
 		48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F47F23BEE3BA00C7EB12 /* Constants.swift */; };
 		48F7F48223BEE3EA00C7EB12 /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */; };
-		48F7F48A23BEFBBC00C7EB12 /* BaseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */; };
+		48F7F48A23BEFBBC00C7EB12 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48923BEFBBC00C7EB12 /* BaseView.swift */; };
 		48F7F48C23BEFBFA00C7EB12 /* BaseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48B23BEFBFA00C7EB12 /* BaseListPresenter.swift */; };
 		48F7F48F23BEFDE900C7EB12 /* BaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F7F48E23BEFDE900C7EB12 /* BaseListModel.swift */; };
 /* End PBXBuildFile section */
@@ -101,7 +101,7 @@
 		48F7F47A23BEE32C00C7EB12 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		48F7F47F23BEE3BA00C7EB12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48F7F48123BEE3EA00C7EB12 /* JsonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapper.swift; sourceTree = "<group>"; };
-		48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListView.swift; sourceTree = "<group>"; };
+		48F7F48923BEFBBC00C7EB12 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		48F7F48B23BEFBFA00C7EB12 /* BaseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListPresenter.swift; sourceTree = "<group>"; };
 		48F7F48E23BEFDE900C7EB12 /* BaseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -373,7 +373,7 @@
 		48F7F48823BEFB9900C7EB12 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				48F7F48923BEFBBC00C7EB12 /* BaseListView.swift */,
+				48F7F48923BEFBBC00C7EB12 /* BaseView.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -524,7 +524,7 @@
 				4846B57823BED07500483DE7 /* SceneDelegate.swift in Sources */,
 				48F7F48023BEE3BA00C7EB12 /* Constants.swift in Sources */,
 				483497F123BF892600E21885 /* CityDataModel.swift in Sources */,
-				48F7F48A23BEFBBC00C7EB12 /* BaseListView.swift in Sources */,
+				48F7F48A23BEFBBC00C7EB12 /* BaseView.swift in Sources */,
 				4834982123C017CB00E21885 /* CityDetailsViewPresenter.swift in Sources */,
 				48F7F47B23BEE32C00C7EB12 /* ResponseModel.swift in Sources */,
 				483497F323BF894A00E21885 /* CitiesListModel.swift in Sources */,
