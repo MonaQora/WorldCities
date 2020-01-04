@@ -12,9 +12,9 @@ import MapKit
 
 class CityDetailsViewPresenterTests: XCTestCase {
 
-    var presenter: CityDetailsViewPresenter!
-    var view: CitiesDetailsViewMock!
-    var model : CitiesDetailsModelMock!
+    private var presenter: CityDetailsViewPresenter!
+    private var view: CitiesDetailsViewMock!
+    private var model : CitiesDetailsModelMock!
     private var city:City!
 
     override func setUp() {
@@ -59,9 +59,9 @@ class CitiesDetailsModelMock: CityDetailsModel{
 
 class CitiesDetailsViewMock: CityDetailsViewProtocol {
     
-    private(set) var setCityMapDataHasBeenCalled: Bool = false
-    private(set) var setCityViewTitleHasBeenCalled: Bool = false
-    private(set) var setupErrorHandlingHasBeenCalled: Bool = false
+    var setCityMapDataHasBeenCalled: Bool = false
+    var setCityViewTitleHasBeenCalled: Bool = false
+    var setupErrorHandlingHasBeenCalled: Bool = false
 
     func setCityMapData(coordinate: CLLocationCoordinate2D) {
         setCityMapDataHasBeenCalled = true

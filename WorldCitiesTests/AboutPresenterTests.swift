@@ -10,9 +10,9 @@ import XCTest
 @testable import WorldCities
 
 class AboutPresenterTests: XCTestCase {
-    var presenter: AboutPresenter!
-    var view: CitiesListViewMock!
-    var model : CitiesListModelMock!
+    private var presenter: AboutPresenter!
+    private var view: CitiesListViewMock!
+    private var model : CitiesListModelMock!
     
     override func setUp() {
         model = CitiesListModelMock()
@@ -75,8 +75,8 @@ class AboutModelMock: BaseListModel, BaseListModelProtocol {
 
 class AboutViewMock: BaseViewProtocol {
     
-    private(set) var setupViewDataHasBeenCalled: Bool = false
-    private(set) var setupErrorHandlingHasBeenCalled: Bool = false
+    var setupViewDataHasBeenCalled: Bool = false
+    var setupErrorHandlingHasBeenCalled: Bool = false
     
     func setupViewData() {
         setupViewDataHasBeenCalled = true

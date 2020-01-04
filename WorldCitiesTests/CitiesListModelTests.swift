@@ -17,7 +17,7 @@ class CitiesListModelTests: XCTestCase {
     
     override func setUp() {
         model = CitiesListModel()
-        model?.fileName = "citiesTest"
+        model?.fileName = "citiesTest" //I need to excute unit test on fewer number of cities, so I created a new file with only 300 cities for testing
     }
 
     override func tearDown() {

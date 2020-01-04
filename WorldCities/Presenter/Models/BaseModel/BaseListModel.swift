@@ -19,6 +19,7 @@ class BaseListModel {
     var jsonMapper: JsonMapper?
 }
 
+//For keeping this method ptional to implemnt
 extension BaseListModelProtocol {
     func searchForCitiesContains(_ searchValue: String, completion: @escaping ([City]?) -> Void) {
         

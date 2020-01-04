@@ -14,7 +14,6 @@ class CityDetailsModelTests: XCTestCase {
 
     private var model: CityDetailsModel?
     private var cityModel:City!
-    private let timeOut = 30.0
     
     override func setUp() {
         model = CityDetailsModel()
