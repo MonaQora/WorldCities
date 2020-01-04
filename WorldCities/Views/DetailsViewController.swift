@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import MapKit
+
+protocol CitiyDetailsViewProtocol {
+    func setCityMapData(coordinate: CLLocationCoordinate2D)
+    func setCityViewTitle(_ name: String?)
+    func setupErrorHandling(error: ModelError)
+}
 
 class DetailsViewController: UIViewController {
 
