@@ -24,12 +24,24 @@ class CitiesListViewController: UIViewController {
         searchBar.delegate = self
         cityListViewPresenter = CitiesViewPresenter.init(view: self, model: CitiesListModel())
         tableView.tableFooterView = UIView()
+        tableView.delegate = self
         setupTableViewDataSource()
         setupNavigationBar()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navigationController = segue.destination as? UINavigationController,
+            let viewController = navigationController.topViewController as? CityDetailsViewController
+        else {
+            fatalError()
+        }
+        viewController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        viewController.navigationItem.leftItemsSupplementBackButton = true
 
+        if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
+            let city = cityListViewPresenter.modelAt(index: selectedRowIndexPath.row)! as City
+            viewController.cityModel = city
+        }
     }
 
     func setupNavigationBar() {

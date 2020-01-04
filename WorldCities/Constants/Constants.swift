@@ -7,6 +7,11 @@
 //
 
 import Foundation
+import MapKit
+
+struct Map {
+    static let zoom: CLLocationDegrees = 10.0
+}
 
 struct ViewTitles {
     static let cititlsListViewTitle = "Cities"
