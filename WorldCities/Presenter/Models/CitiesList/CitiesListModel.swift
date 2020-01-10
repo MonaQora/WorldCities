@@ -31,7 +31,7 @@ class CitiesListModel: BaseListModel {
     private func findStartIndex(searchValue: String) -> Int {
         let citiesList = self.citiesList!
         var startIndex = 0
-        var endIndex = self.citiesList!.count
+        var endIndex = self.citiesList!.count - 1
         var middleIndex = (startIndex + endIndex) / 2
         
         while startIndex != middleIndex {
@@ -50,7 +50,7 @@ class CitiesListModel: BaseListModel {
     private func findEndIndex(searchValue: String) -> Int {
         let citiesListReversed = self.citiesListReversed!
         var startIndex = 0
-        var endIndex = citiesListReversed.count
+        var endIndex = citiesListReversed.count - 1
         var middleIndex = (startIndex + endIndex) / 2
         
         while startIndex != middleIndex {
